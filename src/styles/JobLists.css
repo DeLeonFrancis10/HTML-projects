@@ -1,40 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-.educ {
+.work {
   background-color: white;
   font-size: 100px;
-  display: block;
   justify-content: center;
   font-family: 'Raleway', sans-serif;
 }
     
-.educ h1{
+.work h1{
   font-size: 3rem;
   color: black;
   display: flex;
   justify-content: center;
 }
-.educ h2{
+.work h2{
     font-size: 2rem;
     color: rgb(255, 255, 255);
     
 }
-.educ p{
+.work p{
   font-size: 1rem;
   color: rgb(255, 255, 255);
   
 }
   
-.educ .cards {
-    width: 800px;
+.work .cards {
+    display: flex;
+    width: 100%;
     margin-top: 10px;
     padding: 10px;
-    justify-content:  center;
-    margin-left: 350px;
+    justify-content: center;
   }
       
 .cards .card {
-    
-    background: #ddd9d9;
+    background: #faf4d3;
     border: 3px solid #333;
     padding: 20px 20px;
     margin-bottom: 15px;
@@ -48,11 +46,25 @@
 .cards .card a {
     text-decoration: none;
 }
-.educ .cards .card img{
-    width: 500px;
-    height: 250px;
-    transition: transform;
+
+@media only screen and (max-width: 1300px) {
+  .projectList {
+    grid-template-columns: 1fr 1fr;
   }
-.educ .cards .card:hover{
-  transform: scale(1.1)
+}
+
+@media only screen and (max-width: 800px) {
+  .projectList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projectList {
+    width: 100%;
+  }
+  .projectItem {
+    width: 300px;
+    height: 300px;
+  }
 }

@@ -1,27 +1,25 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import JobList from './pages/JobList';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Joblists from "./pages/JobLists";
+import Login from "./pages/Login";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/joblist" element={<JobList/>}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/signup" element={<SignUp />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/joblists" element={<Joblists />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer/>
     </div>
-   
   );
 }
 
