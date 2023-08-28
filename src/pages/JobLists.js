@@ -3,19 +3,21 @@ import "../styles/JobLists.css";
 
 function JobLists() {
   return (
-    <div className="work">
-      <h1> Works</h1>
+    <div className="job">
+      <h1>One Platform</h1>
+      <h2>Many Solutions</h2>
 
-      <div className="projects">
+      <div className="jobs">
       <ul class="cards">
         <li class="card">
-            <h2>CARDVIEW</h2>
+            <h3>CARDVIEW</h3>
           </li>
           <li className="card">
-          <h2>CARDVIEW</h2>
+          <h3>CARDVIEW</h3>
           </li>
           <li className="card">
-          <h2>CARDVIEW</h2>
+          <h3>CARDVIEW</h3>
+          
           </li>
           </ul>
     </div>

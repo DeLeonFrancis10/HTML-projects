@@ -13,6 +13,10 @@ function Home() {
           <button className="find">Search</button>
           </div>
         </div>
+
+        <div className="latest-job">
+          
+          </div>
       </div>
   );
 }
